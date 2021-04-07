@@ -9,7 +9,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="test-eureka" />
         <module name="eureka-server" />
+        <module name="ribbon-consumer" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eureka-ribbon" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

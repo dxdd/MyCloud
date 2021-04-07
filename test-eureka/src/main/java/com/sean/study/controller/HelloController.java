@@ -8,6 +8,8 @@ import org.springframework.cloud.client.serviceregistry.Registration;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 import java.util.logging.Logger;
@@ -16,7 +18,7 @@ import java.util.logging.Logger;
  * @Author: sean
  * @Date: 2021/4/2 15:44
  */
-@Controller
+@RestController
 public class HelloController {
     private Logger logger = Logger.getLogger(String.valueOf(getClass()));
     @Autowired
