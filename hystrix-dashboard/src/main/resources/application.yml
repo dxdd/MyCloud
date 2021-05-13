@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: hystrix-dashboard
+
+server:
+  port: 2001
+hystrix:
+  dashboard:
+    init-parameters: {proxy-stream-allow-list:"*"}

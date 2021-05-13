@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="384.0" y="395.0">org.springframework.boot.autoconfigure.condition.ConditionalOnBean</node>
+    <node x="133.99999999999997" y="80.0">com.netflix.loadbalancer.AbstractLoadBalancer</node>
+    <node x="20.0" y="630.0">org.springframework.cloud.client.loadbalancer.LoadBalancerInterceptor</node>
+    <node x="0.0" y="395.0">org.springframework.boot.autoconfigure.condition.ConditionalOnClass</node>
+    <node x="0.0" y="240.0">com.netflix.loadbalancer.DynamicServerListLoadBalancer</node>
+    <node x="317.0" y="550.0">org.springframework.cloud.client.loadbalancer.LoadBalancerClient</node>
+    <node x="32.0" y="320.0">com.netflix.loadbalancer.ZoneAwareLoadBalancer</node>
+    <node x="148.0" y="475.0">org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration</node>
+    <node x="52.0" y="160.0">com.netflix.loadbalancer.BaseLoadBalancer</node>
+    <node x="212.0" y="395.0">org.springframework.context.annotation.Configuration</node>
+    <node x="0.0" y="550.0">org.springframework.http.client.ClientHttpRequestInterceptor</node>
+    <node x="248.0" y="160.0">com.netflix.loadbalancer.NoOpLoadBalancer</node>
+    <node x="161.99999999999997" y="0.0">com.netflix.loadbalancer.ILoadBalancer</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.cloud.client.loadbalancer.LoadBalancerInterceptor" target="org.springframework.http.client.ClientHttpRequestInterceptor">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration" target="org.springframework.context.annotation.Configuration">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration" target="org.springframework.boot.autoconfigure.condition.ConditionalOnBean">
+      <point x="93.33333333333337" y="-15.0" />
+      <point x="381.33333333333337" y="450.0" />
+      <point x="476.0" y="450.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.netflix.loadbalancer.DynamicServerListLoadBalancer" target="com.netflix.loadbalancer.BaseLoadBalancer">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration" target="org.springframework.boot.autoconfigure.condition.ConditionalOnClass">
+      <point x="-93.33333333333337" y="-15.0" />
+      <point x="194.66666666666663" y="450.0" />
+      <point x="96.0" y="450.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.netflix.loadbalancer.NoOpLoadBalancer" target="com.netflix.loadbalancer.AbstractLoadBalancer">
+      <point x="0.0" y="-15.0" />
+      <point x="336.0" y="135.0" />
+      <point x="290.0" y="135.0" />
+      <point x="52.0" y="15.0" />
+    </edge>
+    <edge source="com.netflix.loadbalancer.BaseLoadBalancer" target="com.netflix.loadbalancer.AbstractLoadBalancer">
+      <point x="0.0" y="-15.0" />
+      <point x="140.0" y="135.0" />
+      <point x="185.99999999999997" y="135.0" />
+      <point x="-52.0" y="15.0" />
+    </edge>
+    <edge source="com.netflix.loadbalancer.ZoneAwareLoadBalancer" target="com.netflix.loadbalancer.DynamicServerListLoadBalancer">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.netflix.loadbalancer.AbstractLoadBalancer" target="com.netflix.loadbalancer.ILoadBalancer">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="592.0000000000005" y="366.6666666666666" />
+  <SelectedNodes>
+    <node>org.springframework.cloud.client.loadbalancer.LoadBalancerClient</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
